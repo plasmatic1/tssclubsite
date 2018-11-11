@@ -1,4 +1,4 @@
-# tssclubsite
+# clubsite
 
 A WIP club/announcements backend for schools.
 
