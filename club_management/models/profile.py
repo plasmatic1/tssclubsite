@@ -7,7 +7,7 @@ from django.utils.translation import ugettext_lazy as _
 from django.contrib.auth.models import User
 from sortedm2m.fields import SortedManyToManyField
 
-from club_management.models.clubs import Club
+from club_management.models.club import Club
 
 class Profile(models.Model):
     user_name = models.OneToOneField(User, verbose_name=_('Username'), on_delete=models.CASCADE, null=True)

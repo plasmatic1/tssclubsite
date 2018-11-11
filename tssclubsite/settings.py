@@ -39,8 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'sortedm2m',
-    
-    'club_management.apps.ClubsConfig',
+
+    'club_management.apps.ClubManagementConfig',
 ]
 
 MIDDLEWARE = [
