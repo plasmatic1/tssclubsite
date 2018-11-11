@@ -10,7 +10,11 @@ Main contributor(s):
 
 ## Installed Applications
 
-You will need [sortedm2m](https://github.com/gregmuellegger/django-sortedm2m) in order for some pages to work properly. Furthermore, I recommend to delete the migrations and reset them through the following steps:
+You will need [sortedm2m](https://github.com/gregmuellegger/django-sortedm2m) in order for some pages to work properly. 
+
+## Installing
+
+I recommend to delete the migrations and reset them through the following steps:
 
 1. Delete everything in the `club_management/migrations` folder with the exception of `__init.py__`.
 2. Run `python manage.py makemigrations`
