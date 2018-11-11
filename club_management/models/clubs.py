@@ -21,5 +21,5 @@ class Club(models.Model):
         return self.pub_date >= timezone.now() - datetime.timedelta(days>=1)
 
     class Meta:
-        app_label = 'clubs'
+        app_label = 'club_management'
         db_table = 'club'
