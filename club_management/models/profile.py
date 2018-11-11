@@ -14,9 +14,12 @@ class Profile(models.Model):
         validators=[RegexValidator('^[a-zA-Z]+$', _('Second name must be made of characters only.'))])
 
     def __str__(self):
-        if(self.user_name is None):
-            return "USER PROFILE DOES NOT EXIST";
-        return self.user_name
+        if self.user_name:
+            return str(self.user_name)
+        return self.user.username
+
+    def __unicode__(self):
+        return self.user.username
 
     class Meta:
         verbose_name = _('user profile')
