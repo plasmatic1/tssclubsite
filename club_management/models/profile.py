@@ -47,5 +47,8 @@ class Profile(models.Model):
         return self.user.username
 
     class Meta:
+        permissions = (
+            ('edit_joined_clubs', 'Change clubs field for user profile'),
+        )
         verbose_name = _('user profile')
         verbose_name_plural = _('user profiles')
