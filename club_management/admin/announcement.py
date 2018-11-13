@@ -5,4 +5,4 @@ from django.utils.translation import ugettext, ugettext_lazy as _
 from club_management.models.announcement import Announcement
 
 class AnnouncementAdmin(admin.ModelAdmin):
-    fields = ('code', 'title', 'is_public', 'date_posted')
+    fields = ('code', 'title', 'is_public', 'date_posted', 'content')

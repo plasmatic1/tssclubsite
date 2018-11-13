@@ -4,8 +4,6 @@ from django.db import models
 from django.utils import timezone
 from django.core.validators import RegexValidator
 from django.utils.translation import ugettext_lazy as _
-from django.contrib.auth.models import User
-from sortedm2m.fields import SortedManyToManyField
 
 class Announcement(models.Model):
     code = models.CharField(max_length=20, unique=True, blank=True,
@@ -15,6 +13,8 @@ class Announcement(models.Model):
     is_public = models.BooleanField(db_index=True, default=False,
         verbose_name=_('publicly visible'))
     date_posted = models.DateTimeField(verbose_name=_('published on'))
+    content = models.TextField(blank=True,
+        verbose_name=_('announcement content'))
 
     def __str__(self):
         return self.title
